@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Practice</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" placeholder="First Name" required>
+
+        <label for="lastName">Last Name:</label>
+        <input id="lastName"type="text" placeholder="Last Name" required>
+
+        <!-- gender section. need div to get block level element -->
+        <div>
+        <label for="gender">Male</label>
+        <input name="gender "type="radio">
+
+        <label for="gender">Female</label>
+        <input name="gender "type="radio">
+
+        <label for="gender">Other</label>
+        <input name="gender "type="radio">
+        </div>
+
+        <!-- email and password section -->
+        <label for="email">Email</label>
+        <input id= "email" type="email" placeholder="Email Address" required>
+
+        <!-- required to min 5 characters -->
+        <label for="password">Password:</label>
+        <input id="password"type="password" placeholder="Password"   pattern = ".{5}"required title = "5 characters minimum">
+        
+        <div>
+            <!-- birthday section -->
+            <label> Birthday:
+                <select>
+                    <option value="">Month</option>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                </select>
+                
+                <select name="" id="">
+                    <option value="">Day</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+
+                <select name="" id="">
+                        <option value="">Year</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                </select>
+            </label>
+           
+        </div>
+        
+    <input type="submit">
+    </form>
+</body>
+</html>
